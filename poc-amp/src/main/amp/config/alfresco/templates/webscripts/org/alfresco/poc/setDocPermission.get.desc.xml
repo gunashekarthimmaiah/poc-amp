@@ -1,0 +1,8 @@
+<webscript>
+	<shortname>Retrieves SOW Document</shortname>
+	<description>Returns properties of the SOW document for a specified folder path</description>
+	<url>/setDocPermission</url>
+	<format default="json">argument</format>
+	<authentication>user</authentication>
+	<transaction>required</transaction>
+</webscript>

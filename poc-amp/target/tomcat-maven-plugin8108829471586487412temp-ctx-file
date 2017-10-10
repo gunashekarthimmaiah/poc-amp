@@ -1,0 +1,12 @@
+<Context path="/share" reloadable="false" backgroundProcessorDelay="-1">
+  <Resources className="org.apache.naming.resources.VirtualDirContext" extraResourcePaths="/=C:\\POC\\poc-amp\\target/amp/web,C:\\POC\\poc-amp\\target/amp-war"/>
+  <Loader searchVirtualFirst="true" className="org.apache.catalina.loader.VirtualWebappLoader" virtualClasspath="C:\\POC\\poc-amp\\target\\classes;C:\\POC\\poc-amp\\target/amp/config;C:\\POC\\poc-amp\\target\\test-classes"/>
+  <JarScanner scanAllDirectories="true"/>
+  <bean parent="dictionaryModelBootstrap" depends-on="dictionaryBootstrap" id="custommodel.dictionaryBootstrap">
+    <property name="models">
+      <list>
+        <value>alfresco/extension/custom-content-model.xml</value>
+      </list>
+    </property>
+  </bean>
+</Context>

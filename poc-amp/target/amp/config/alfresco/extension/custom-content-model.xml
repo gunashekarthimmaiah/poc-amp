@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="cs:spotlinemodel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <description>Spot line Content Model</description>
+    <version>1.0</version>
+
+    <imports>
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+    </imports>
+
+    <namespaces>
+		<namespace uri="http://cms.spotline.com/model/content/1.0" prefix="cs"/>
+    </namespaces>
+
+	<aspects>
+		<aspect name="cs:sow">
+			<title>SOW</title>
+			<properties>
+				<property name="cs:sowTemplate">
+				 <title>SOW Template</title>
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+				<property name="cs:product">
+				 <title>SOW Product</title>
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+				<property name="cs:wf">
+				 <title>workflow</title>
+					<type>d:boolean</type>
+					<default>true</default>
+				</property>
+				<property name="cs:sowAmount">
+				 <title>SOW Amount</title>
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+				<property name="cs:sowName">
+				 <title>SOW Name</title>
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+				<property name="cs:docSubDate">
+				 <title>Document submitted date</title>
+					<type>d:date</type>
+					<mandatory>true</mandatory>
+				</property>
+				<property name="cs:customer">
+				 <title>SOW Customer</title>
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+				<property name="cs:technology">
+				 <title>SOW Technology</title>
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+				<property name="cs:docDueDate">
+				 <title>Document Due date</title>
+					<type>d:date</type>
+					<mandatory>true</mandatory>
+				</property>
+				
+				<property name="cs:approvers">
+				 <title>Approvers</title>
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+				<property name="cs:sowId">
+				 <title>SOW ID</title>
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+				</property>
+			</properties>
+		</aspect>
+	</aspects>
+</model>

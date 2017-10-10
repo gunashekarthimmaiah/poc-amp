@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [03/Oct/2017:01:49:14 -0700] "GET /share/page/ HTTP/1.1" 200 38967 http-bio-8081-exec-1 38635
+0:0:0:0:0:0:0:1 - - [03/Oct/2017:01:49:17 -0700] "GET /share/res/favicon.ico HTTP/1.1" 200 1406 http-bio-8081-exec-7 104

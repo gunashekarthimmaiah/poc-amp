@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alfresco-config>
+	<!-- Document Library config section -->
+	<config evaluator="string-compare" condition="DocumentLibrary">
+		<aspects>
+			<!--Aspects that a user can see-->
+			<visible>
+				<aspect name="cs:sow" />
+			</visible>
+
+			<!--Aspects that a user can add. Same as "visible" if left empty-->
+			<addable>
+			<aspect name="cs:sow" />
+			</addable>
+
+			<!--Aspects that a user can remove. Same as "visible" if left empty-->
+			<removeable>
+			<aspect name="cs:sow" />
+			</removeable>
+		</aspects>
+	</config>
+
+	<config evaluator="aspect" condition="cs:sow">
+		<forms>
+			<form>
+				<field-visibility>
+					<show id="cs:sowTemplate" />
+					<show id="cs:product"/>
+					<show id="cs:wf" />
+					<show id="cs:sowAmount"/>
+					<show id="cs:sowName" />
+					<show id="cs:docSubDate"/>
+					<show id="cs:customer" />
+					<show id="cs:technology"/>
+					<show id="cs:docDueDate" />
+					<show id="cs:approvers"/>
+					<show id="cs:sowId"/>
+				</field-visibility>
+				<appearance>
+					<field id="cs:sowTemplate" read-only="false"/>
+					<field id="cs:product" read-only="false"/>
+					<field id="cs:wf" read-only="false"/>
+					<field id="cs:sowAmount" read-only="false"/>
+					<field id="cs:sowName" read-only="false"/>
+					<field id="cs:docSubDate" read-only="false"/>
+					<field id="cs:customer" read-only="false"/>
+					<field id="cs:docDueDate" read-only="false"/>
+					<field id="cs:approvers" read-only="false"/>
+					<field id="cs:sowId" read-only="false"/>
+				</appearance>
+			</form>
+		</forms>
+	</config>
+</alfresco-config>
